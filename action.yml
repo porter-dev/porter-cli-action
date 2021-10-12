@@ -1,0 +1,12 @@
+name: Run Porter CLI
+description: Run Porter CLI
+inputs:
+  command:
+    description: command for Porter CLI
+    required: true
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  color: purple
+  icon: upload-cloud
