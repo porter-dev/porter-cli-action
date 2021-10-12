@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-/bin/sh -c "porter $1"
+: "${INPUT_COMMAND:?input \"command\" not set or empty}"
+
+/bin/sh -c "porter $INPUT_COMMAND"
