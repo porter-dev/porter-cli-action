@@ -11,7 +11,7 @@ steps:
     with:
       command: version
     env:
-      PORTER_HOST: https://dashboard.getporter.dev
+      PORTER_HOST: https://dashboard.porter.run
       PORTER_CLUSTER: 1234
       PORTER_PROJECT: 4321
       PORTER_TOKEN: ${{ secrets.PORTER_TOKEN }}
