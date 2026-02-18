@@ -7,7 +7,7 @@ This Github action runs a CLI command using the Porter CLI.
 ```yaml
 steps:
   - name: Run a Porter CLI command
-    uses: porter-dev/porter-cli-action@v0.1.0
+    uses: porter-dev/porter-cli-action@v0.1.1
     with:
       command: version
     env:
