@@ -30,13 +30,13 @@ To run a Porter CLI command that builds from a Dockerfile with the path `./docke
 ```yaml
 steps:
   - name: Checkout code
-    uses: actions/checkout@v2.3.4
+    uses: actions/checkout@v6
   - name: Set Github tag
     id: vars
     run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
   - name: Update a Porter application
     timeout-minutes: 20
-    uses: porter-dev/porter-cli-action@v0.1.0
+    uses: porter-dev/porter-cli-action@v0.1.1
     with:
       command: update --app my-app --tag ${{ steps.vars.outputs.sha_short }} --dockerfile ./docker/Dockerfile --stream
     env:
